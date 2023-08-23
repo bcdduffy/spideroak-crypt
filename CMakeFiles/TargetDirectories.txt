@@ -1,0 +1,5 @@
+C:/Users/bcddu/Documents/spideroak-crypt/CMakeFiles/CryptLib.dir
+C:/Users/bcddu/Documents/spideroak-crypt/CMakeFiles/Encrypt.dir
+C:/Users/bcddu/Documents/spideroak-crypt/CMakeFiles/Decrypt.dir
+C:/Users/bcddu/Documents/spideroak-crypt/CMakeFiles/ALL_BUILD.dir
+C:/Users/bcddu/Documents/spideroak-crypt/CMakeFiles/ZERO_CHECK.dir
