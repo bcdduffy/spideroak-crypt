@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CryptProj",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "CryptLib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CryptLib-Debug-5c46492c67435b4b4ff8.json",
+					"name" : "CryptLib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Decrypt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Decrypt-Debug-b5e32e2e09f138cc1ce7.json",
+					"name" : "Decrypt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Encrypt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Encrypt-Debug-35974e2078a09983c5d2.json",
+					"name" : "Encrypt",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/bcddu/Documents/spideroak-crypt/build",
+		"source" : "C:/Users/bcddu/Documents/spideroak-crypt"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

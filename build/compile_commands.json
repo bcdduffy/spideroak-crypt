@@ -1,0 +1,20 @@
+[
+{
+  "directory": "C:/Users/bcddu/Documents/spideroak-crypt/build",
+  "command": "C:\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\CryptLib.dir\\crypt.cpp.obj -c C:\\Users\\bcddu\\Documents\\spideroak-crypt\\crypt.cpp",
+  "file": "C:/Users/bcddu/Documents/spideroak-crypt/crypt.cpp",
+  "output": "CMakeFiles/CryptLib.dir/crypt.cpp.obj"
+},
+{
+  "directory": "C:/Users/bcddu/Documents/spideroak-crypt/build",
+  "command": "C:\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\Encrypt.dir\\encrypt.cpp.obj -c C:\\Users\\bcddu\\Documents\\spideroak-crypt\\encrypt.cpp",
+  "file": "C:/Users/bcddu/Documents/spideroak-crypt/encrypt.cpp",
+  "output": "CMakeFiles/Encrypt.dir/encrypt.cpp.obj"
+},
+{
+  "directory": "C:/Users/bcddu/Documents/spideroak-crypt/build",
+  "command": "C:\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\Decrypt.dir\\decrypt.cpp.obj -c C:\\Users\\bcddu\\Documents\\spideroak-crypt\\decrypt.cpp",
+  "file": "C:/Users/bcddu/Documents/spideroak-crypt/decrypt.cpp",
+  "output": "CMakeFiles/Decrypt.dir/decrypt.cpp.obj"
+}
+]

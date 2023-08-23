@@ -7,47 +7,59 @@ std::string key;
 
 
 bool encrypt(std::string in_message, std::string message_key){
+
     std::ofstream cryptFile;
     cryptFile.open("messages.csv", std::ios::app);
     if (!cryptFile.is_open()) {
         std::cout << "Error: File failed to open" << std::endl;
         return false;
     }
-    std::string cyphertext = encrypt_algorithm(in_message, message_key);
+
+    std::string cyphertext = encrypt_decrypt(in_message, message_key);
+    //std::cout << "Decrypted: " << encrypt_decrypt(cyphertext, message_key) << std::endl;
     cryptFile << cyphertext << "," << message_key << "\n";
     cryptFile.close();
     return true;
+
 }
 
-bool decrypt(std::string message_key){
-    std::ofstream cryptFile;
-    cryptFile.open("C:\\messages.csv");
+std::string decrypt(std::string message_key){
+    std::ifstream cryptFile;
+    cryptFile.open("messages.csv");
     if (!cryptFile.is_open()) {
         std::cout << "Error: File failed to open" << std::endl;
     }
+    std::string decrypted_string = "";
+    std::string line = "";
+    while(getline(cryptFile, line)) {
+        std::string file_key;
+        std::string file_cypher;
 
-    while(cryptFile.good()) {
-        
+        std::stringstream inputString(line);
+
+        getline(inputString, file_cypher, ',');
+        getline(inputString, file_key);
+
+        if(message_key == file_key){
+            decrypted_string = file_cypher;
+            break;
+        }
+
     }
 
-    return true;
+    decrypted_string = encrypt_decrypt(decrypted_string, message_key);
+    cryptFile.close();
+    return decrypted_string;
 }
 
 
 
-std::string encrypt_algorithm(std::string msg, std::string key)
+std::string encrypt_decrypt(std::string msg, std::string key)
 {
-    // Make sure the key is at least as long as the message
-    std::string tmp(key);
-    while (key.size() < msg.size())
-        key += tmp;
-    
-    // And now for the encryption part
-    for (std::string::size_type i = 0; i < msg.size(); ++i)
-        msg[i] ^= key[i];
-    return msg;
-}
-std::string decrypt_algorithm(std::string msg, std::string key)
-{
-    return encrypt_algorithm(msg, key); // lol
+    char keyChar = key[0]; 
+    std::string output = msg;
+    for (int i = 0; i < msg.size(); i++){
+        output[i] = msg[i] ^ keyChar;
+    }
+    return output;
 }

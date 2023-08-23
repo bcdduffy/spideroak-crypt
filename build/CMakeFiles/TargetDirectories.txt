@@ -1,0 +1,5 @@
+C:/Users/bcddu/Documents/spideroak-crypt/build/CMakeFiles/CryptLib.dir
+C:/Users/bcddu/Documents/spideroak-crypt/build/CMakeFiles/Encrypt.dir
+C:/Users/bcddu/Documents/spideroak-crypt/build/CMakeFiles/Decrypt.dir
+C:/Users/bcddu/Documents/spideroak-crypt/build/CMakeFiles/edit_cache.dir
+C:/Users/bcddu/Documents/spideroak-crypt/build/CMakeFiles/rebuild_cache.dir
